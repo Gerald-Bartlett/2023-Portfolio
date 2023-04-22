@@ -1,0 +1,649 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* Variables */
+:root {
+    --font-family: "Roboto", sans-serf;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #fcfcfc;
+    --primary-color: #4756df;
+    --secondary-color: #ff7235;
+    --primary-shadow: #8b8eaf;
+    --secondary-shadow: #a17a69;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+body {
+    height: 100%;
+    /* background-image: url("/assets/img/images/heroImage2.jpg"); */
+    background-size: cover;
+    position: relative;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    /* overflow: hidden; */
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+u {
+    font-size: 3vw;
+    padding-bottom: 30px;
+}
+
+/* to remove the "dots" in the nav menu items*/
+ul {
+    list-style-type: none;
+}
+
+/* to remove the "dots" in the nav menu items*/
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* to hover effect menu list changes color when hovering*/
+a:hover {
+    color: var(--secondary-color);
+}
+
+.dl-resume {
+    font-size: 15px;
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+/* --Put navbar to sticky with the position property, so it remains at the top 
+   --z-index property with the value of 1 
+     makes sure the navbar displays over any other element on the web page 
+   -- applied a shadow to the bottom of the navbar with the box-shadow property*/
+
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 10px;
+    width: 99%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    border: 4px solid black;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.877);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.906);
+
+}
+
+/* nav menu items to be side by side use Flexbox. */
+nav h1 {
+    color: white;
+
+}
+
+nav a {
+    color: white;
+    transition: var(--transition);
+    font-size: 25px;
+}
+
+nav a:hover {
+    color: crimson;
+    border-bottom: 2px solid crimson;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.9rem;
+}
+
+nav ul li {
+    font-weight: var(--bold-font);
+}
+
+
+.burger-menu {
+    color: black;
+    font-size: 2rem;
+    border: 0;
+    display: block;
+    cursor: pointer;
+    display: none;
+    padding: 0px;
+    margin: 20px;
+}
+
+.burger-menu nav ul li {
+    color: black;
+    background-color: blue;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 188rem;
+    margin: 50px;
+}
+
+
+
+.hero img {
+    margin-top: 15rem;
+    margin-left: 25rem;
+    height: 22rem;
+    width: 22rem;
+    border-radius: 50%;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+    transition: width 1s, height 1s;
+}
+
+.hero img:hover {
+    margin-top: 15rem;
+    width: 500px;
+    height: 500px;
+
+}
+
+.bio {
+    margin-top: 15rem;
+    width: 45rem;
+    padding: 1.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+    font-size: 1.25rem;
+    color: white;
+}
+
+.bio h1 {
+    margin-bottom: var(--bottom-margin);
+}
+
+
+
+.bio p,
+h1,
+h2 {
+    margin-bottom: var(--bottom-margin);
+    -webkit-animation: colorchange 22s infinite alternate;
+
+}
+
+@-webkit-keyframes colorchange {
+    0% {
+
+        color: white;
+    }
+
+    10% {
+
+        color: white;
+    }
+
+    20% {
+
+        color: white;
+    }
+
+    30% {
+
+        color: #d35400;
+    }
+
+    40% {
+
+        color: white;
+    }
+
+    50% {
+
+        color: #f1c40f;
+    }
+
+    60% {
+
+        color: white;
+    }
+
+    70% {
+
+        color: #2980b9;
+    }
+
+    80% {
+
+        color: #f1c40f;
+    }
+
+    90% {
+
+        color: white;
+    }
+
+    100% {
+
+        color: pink;
+    }
+}
+
+.about-me {
+    font-size: 20px;
+
+}
+
+.more-about {
+    margin-top: 55rem;
+    background-color: none;
+    padding: 5rem 6rem;
+    color: white;
+}
+
+.more-about h2 {
+
+
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+}
+
+.more-about p {
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+    line-height: var(--line-height);
+    padding: 0.4rem;
+}
+
+/* .lang-web {
+  margin-top: auto;
+} */
+
+.skills {
+    max-width: 175rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 12rem;
+
+}
+
+.column {
+    color: aliceblue;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Float five columns side by side */
+.column {
+    margin-top: 8rem;
+    float: left;
+    width: 20%;
+    padding: 10px 10px;
+}
+
+.row {
+    margin: 0;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.skill-header {
+    margin-top: 8rem;
+    color: white;
+    text-align: center;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 360px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 15px;
+    }
+}
+
+.skills {
+    max-width: 70rem;
+    margin: auto;
+    text-align: center;
+
+
+}
+
+figcaption {
+    color: white;
+    font-size: 20px;
+}
+
+figcaption:hover {
+    color: var(--secondary-color);
+}
+
+.skill-header {
+    margin: 5rem;
+    margin-top: 17rem;
+    color: white;
+    margin-top: 25rem;
+}
+
+.skills-wrapper img {
+    padding: 1.25rem;
+    margin-top: 25rem;
+}
+
+.icon {
+    width: 10rem;
+    height: 10rem;
+}
+
+.icon-card {
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    padding: 5px;
+    margin: 10px;
+}
+
+.projects {
+    width: 100%;
+    margin: 25px;
+    padding: 3px 0;
+    margin-top: 2rem;
+}
+
+.project-pic {
+    width: 100%;
+    height: 100%;
+}
+
+/* set the text align property to the value of center: */
+
+.projects-container {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.project-container {
+    float: left;
+    padding: 5px;
+    border: 3px solid red;
+    box-shadow: 0 14px 14px;
+    text-align: center;
+    width: 30rem;
+    padding: 10rem;
+    margin-bottom: 20rem;
+}
+
+.project-container p {
+    padding: 0.4rem;
+}
+
+.projects-title {
+    text-align: center;
+    margin: 15rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.node-video {
+    width: auto;
+    height: auto;
+}
+
+.project-title {
+    margin-bottom: var(--bottom-margin);
+}
+
+.project-details {
+    margin-bottom: var(--bottom-margin);
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+    padding: 10px;
+    margin: 10px;
+}
+
+.contact {
+    margin-top: 14rem;
+    margin-bottom: 5rem;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: var(--bottom-margin-2);
+    font-size: 20px;
+}
+
+.contact-form-container {
+
+    max-width: 40.75rem;
+    margin: 0 auto;
+    padding: 0.938rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+}
+
+.contact-form-container label {
+    line-height: 2.7em;
+    font-weight: var(--bold-font);
+    color: white;
+}
+
+.contact-form-container textarea {
+    min-height: 6.25rem;
+    font-size: 14px;
+}
+
+.contact-form-container .input-field {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    border: 2px outset var(--primary-color);
+    font-size: 0.875rem;
+    outline: none;
+}
+
+.input-field::placeholder {
+    padding: 0.5rem;
+    color: var(--primary-color);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: var(--bold-font);
+    transition: var(--transition);
+}
+
+.submit-btn:hover {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+}
+
+.socicon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: white;
+}
+
+footer {
+    background-color: var(--bg-color);
+    padding: 1.25rem;
+    text-align: center;
+    margin: 1rem 0 0;
+}
+
+@media screen and (max-width: 720px) {
+    /*changes reflects on screen with a width of 720px and below*/
+
+
+    nav {
+        padding: .5rem .5rem;
+    }
+
+    nav ul {
+        position: fixed;
+        background-color: black;
+        flex-direction: column;
+        top: 86px;
+        left: 70%;
+        width: 30%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.25s ease-in;
+    }
+
+    nav ul li {
+        margin: 8px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    nav ul.show {
+        transform: translateX(0);
+    }
+
+    .hero {
+        margin-top: -4rem;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .hero img {
+        height: 30.5rem;
+        width: 30rem;
+    }
+
+    .bio {
+        margin-top: -7rem;
+        width: 40.5rem;
+
+    }
+
+    .more-about {
+        margin-top: 2rem;
+        padding: 1rem 3.5rem;
+    }
+
+    .more-about h2 {
+        text-align: center;
+
+    }
+
+    .more-about p {
+
+        text-align: justify;
+
+    }
+
+    .icon {
+        width: 5.875rem;
+        height: 5.25rem;
+    }
+
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .project-container {
+        width: 20rem;
+    }
+
+    .contact-form-container {
+        max-width: 23rem;
+    }
+
+    @media screen and (max-width: 420px) {
+        .hero img {
+            height: 37.5rem;
+            width: 23rem;
+        }
+
+        .bio {
+            width: 18.3rem;
+        }
+
+        .project-container {
+            width: 17.875rem;
+        }
+
+        .contact-form-container {
+            max-width: 17.75rem;
+        }
+    }
+}
+
+.view-resume {
+    font-size: 20px;
+}
+
+
+
+.view-resume {
+    line-height: 46pt;
+}
+
+@media screen and (min-width: 700px) {
+
+    p.text {
+
+        font-size: 2px;
+
+    }
+
+}
