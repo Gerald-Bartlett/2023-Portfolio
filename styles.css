@@ -39,6 +39,10 @@ body {
 
 }
 
+body {
+    font-family: var(--font-family);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -76,9 +80,7 @@ a:hover {
     text-decoration: none;
 }
 
-body {
-    font-family: var(--font-family);
-}
+
 
 /* --Put navbar to sticky with the position property, so it remains at the top 
    --z-index property with the value of 1 
@@ -267,29 +269,25 @@ h2 {
     color: white;
 }
 
-.more-about h2 {
-
-
-    margin-bottom: var(--bottom-margin);
-    text-align: center;
-}
+/* .more-about h2 {  
+    text-align: right;
+} */
 
 .more-about p {
-    margin-top: 20rem;
+    margin-top: 10rem;
     margin-bottom: 20rem;
-    line-height: var(--line-height);
+    line-height: 1.70rem;
     padding: 0.4rem;
 }
 
-/* .lang-web {
-  margin-top: auto;
-} */
+
 
 .skills {
     max-width: 175rem;
     margin: auto;
+    padding: auto;
     text-align: center;
-    margin-top: 12rem;
+    margin-top: 10rem;
 
 }
 
@@ -327,13 +325,79 @@ h2 {
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 360px) {
+@media screen and (min-width: 320px) {
     .column {
-        width: 100%;
+        width: 33%;
         display: block;
         margin-bottom: 15px;
+       
     }
+        .row {
+            margin: 0;
+           
+        }
+    
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
 }
+
+@media screen and (max-device-width: 320px) {
+   nav, .hero  {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+            max-width: 8rem;
+            margin: 3rem;
+        }
+    
+    .dl-resume {
+        font-size: 5px;
+        text-decoration: none;
+    }
+    .dl-resume, .header{
+        font-size:1vh;
+        margin: auto;
+        padding:5px;
+    }
+    
+        .hero img {
+            margin-top: 1rem;
+            margin-left: 15rem;
+            height: 10%;
+            width:10%;
+            border-radius: 50%;
+            box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+            /* transition: width 1.1s, height 1.1s; */
+        }
+              
+    
+        .hero img:hover {
+            margin-top: 15rem;
+            width: 10vh;
+            height: 10vh;
+    
+        }
+    
+        .bio {
+            margin-bottom: 5rem;
+            width: 5rem;
+            height:10rem;
+            
+            padding: 1.625rem;
+            border-radius: 6px;
+            box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+            font-size: .75rem;
+            color: white;
+        }
+    
+    }
+
+
 
 .skills {
     max-width: 70rem;
