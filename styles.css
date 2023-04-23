@@ -16,7 +16,6 @@
     --line-height: 1.7rem;
     --transition: 0.3s;
 }
-
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
     position: fixed;
@@ -28,11 +27,10 @@
 }
 
 body {
-    height: 100%;
-    /* background-image: url("/assets/img/images/heroImage2.jpg"); */
+    height: 100%;    
     background-size: cover;
     position: relative;
-    /* Center and scale the image nicely */
+    /* Center and scale the image */
     background-position: center;
     background-repeat: no-repeat;
     /* overflow: hidden; */
