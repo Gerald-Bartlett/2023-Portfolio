@@ -152,27 +152,57 @@ body {
 
 
 
-@media (min-width: 360px ) and (max-width: 768px) {
+@media (min-width: 200px ) and (max-width: 368px) {
+nav {
+        position: fixed;
+        top: 0px;
+        left: auto;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: .75rem .75rem;
+    }
+
+    .nav-link {
+        font-size: 10px;
+        margin: 10px;
+        font-weight: bold;
+    }
+
+
+nav ul {
+        display: flex;
+        gap: .25rem;
+    }
+
     .header {
         display: none !important;
     }
 
+        .gtmr {
+            font-size: 10px;
+            margin: 10px;
+            word-wrap:break-word;
+        }
+
     .image-container{
-        width:50%;
-        height:50%;
-        padding:10px;
+        margin-top: 0;
+        width:80%;
+        height:20%;
+        padding:5px;
     }
 
     .image-container span{
-        width:50%;
-        margin: 10px;
-        padding: 10px;
+        width:100%;
+        margin: auto;
+        padding: auto;
     }
 
     .image-container {
-        position: relative;
-        width: 220px;
-        height: 150px;
+        position: absolute;
+        left: 100px;
+        top: 10em;  
         transform-style: preserve-3d;
         transform: perspective(1000px) rotateY(0deg);
         transition: transform .9s;
@@ -182,40 +212,43 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        width: 77%;
+        width: 80%;
+        height: 80%;
         transform: rotateY(calc(var(--i) * 45deg)) translateZ(200px);
     }
 
     .image-container span img {
-        position: absolute;
+        position: relative;
         left: 0;
         top: 0;
         width: 100%;
-        border-radius: 15px;
+        border-radius: 10px;
     }
 
     .btn-container {
-        position: relative;
-        width:50%;
+        position: absolute;
+            left: 80px;
+            top: 15em;
+            width:55%;
     }
 
     .btn {
         position: absolute;
-        bottom: -240px;
+        bottom: -350px;
         background: crimson;
         color: #fff;
         border: none;
-        padding: 10px 22px;
+        padding: 5px 8px;
         border-radius: 3px;
         cursor: pointer;
     }
 
     #prev {
-        left: 5%;
+        left: 0;
     }
 
     #next {
-        right: 5%;
+        right:0;
     }
 
     .btn:hover {
@@ -223,35 +256,244 @@ body {
         font-weight: 800;
         /* filter: brightness(2.5); */
         color: crimson;
-        border-bottom: 2px solid crimson;
+        /* border-bottom: 2px solid crimson; */
     }
 }
+@media (min-width: 369px ) and (max-width: 480px) {
+nav {
+        position: fixed;
+        top: 0px;
+        left: auto;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: .75rem .75rem;
+    }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+    .nav-link {
+        font-size: 14px;
+        margin: 14px;
+        font-weight: bold;
+    }
+
+
+nav ul {
+        display: flex;
+        gap: .5rem;
+    }
+
+    .header {
+        display: none !important;
+    }
+
+        .gtmr {
+            font-size: 14px;
+            margin: 14px;
+            word-wrap:break-word;
+        }
+
+    .image-container{
+        margin-top: 0;
+        width:100%;
+        height:20%;
+        padding:10px;
+    }
+
+    .image-container span{
+        width:20%;
+        margin: auto;
+        padding: auto;
+    }
+
+    .image-container {
+        position: absolute;
+        left: 140px;
+        top: 10em;       
+        width: 280px;     
+        transform-style: preserve-3d;
+        transform: perspective(1000px) rotateY(0deg);
+        transition: transform .9s;
+    }
+
+    .image-container span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 80%;
+        transform: rotateY(calc(var(--i) * 45deg)) translateZ(275px);
+    }
+
+    .image-container span img {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .btn-container {
+        position: absolute;
+            left: 100px;
+            top: 15em;
+            width:50%;
+    }
+
+    .btn {
+        position: absolute;
+        bottom: -350px;
+        background: crimson;
+        color: #fff;
+        border: none;
+        padding: 3px 20px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    #prev {
+        left: 0;
+    }
+
+    #next {
+        right:0;
+    }
+
+   
+}
+@media (min-width: 490px ) and (max-width: 600px) {
+nav {
+        position: fixed;
+        top: 0px;
+        left: auto;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: .75rem .75rem;
+    }
+
+    .nav-link {
+        font-size: 16px;
+        margin: 16px;
+        font-weight: bold;
+    }
+
+
+nav ul {     
+        gap: 1rem;
+    }
+
+    .header {
+        display: none !important;
+    }
+
+        .gtmr {
+            font-size: 14px;
+            margin: 14px;
+            word-wrap:break-word;
+        }
+
+    .image-container{
+        margin-top: 0;
+        width:100%;
+        height:20%;
+        padding:10px;
+    }
+
+    .image-container span{
+        width:20%;
+        margin: auto;
+        padding: auto;
+    }
+
+    .image-container {
+        position: absolute;
+            left: 180px;
+            top: 15em;
+            width: 325px;
+            height: 300px;
+            transform-style: preserve-3d;
+            transform: perspective(500px) rotateY(0deg);
+            transition: transform .7s;
+    }
+
+    .image-container span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 80%;
+        transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
+    }
+
+    .image-container span img {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .btn-container {
+        position: absolute;
+            left: 140px;
+            top: 15em;
+            width:50%;
+    }
+
+    .btn {
+        position: absolute;
+        bottom: -350px;
+        background: crimson;
+        color: #fff;
+        border: none;
+        padding: 3px 20px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    #prev {
+        left: 0;
+    }
+
+    #next {
+        right:0;
+    }
+
+   
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
     .header {
         display: none !important;
     }
 
     .image-container {
-        width: 75%;
-        height: 75%;
-        padding: 1px;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
     }
 
     .image-container span {
-        width: 75%;
-        height: 75%;
-        margin: 10px;
-        padding: 10px;
+        width: 100%;
+        height: 100%;
+        margin: 20px;
+        padding: 20px;
     }
 
     .image-container {
-        position: relative;
-        width: 225px;
-        height: 200px;
-        transform-style: preserve-3d;
-        transform: perspective(500px) rotateY(0deg);
-        transition: transform .7s;
+
+        position: absolute;
+            left: 300px;
+            top: 15em;
+            width: 325px;
+            height: 300px;
+            transform-style: preserve-3d;
+            transform: perspective(500px) rotateY(0deg);
+            transition: transform .7s;
+
+      
     }
 
     .image-container span {
@@ -259,7 +501,7 @@ body {
         top: 0;
         left: 0;
         width: 90%;
-        transform: rotateY(calc(var(--i) * 45deg)) translateZ(275px);
+        transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
     }
 
     .image-container span img {
@@ -277,7 +519,7 @@ body {
 
     .btn {
         position: absolute;
-        bottom: -240px;
+        bottom: -70px;
         background: crimson;
         color: #fff;
         border: none;

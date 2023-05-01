@@ -25,28 +25,13 @@
     z-index: -1;
 }
 
-/* 
-html {
-    
-    box-sizing: border-box;
-    -moz-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-    font: normal 100%/1.5 Georgia, serif;
-} */
-
 /* CSS Resets */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* *,
-*::before,
-*::after {
-    box-sizing: inherit;
-} */
+
 
 body {
     margin: 1em;
@@ -69,11 +54,9 @@ a {
     color: white;
     text-decoration: none;
 }
-/*make it responsive on big screen sizes. Set the max-width to 1900px so the
- items within the container don’t stretch out to the edges of the screen but also
-  make it responsive on smaller screens by using a width of 90%.*/
+
 .container {
-    max-width: 1900px;
+    max-width: 1200px;
     width: 90%;
     margin: 0 auto;
 }
@@ -256,26 +239,10 @@ a {
     .nav-link:hover {
         color: crimson;
     }
-
-    /* .hamburger {
-        display: none;
-        cursor: pointer;
-    }
-
-    .bar {
-        display: block;
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        -webkit-transition: all 0.3s ease;
-        transition: all 0.2s ease;
-        background-color: white;
-    } */
-
 }
 
 .hero {
-    margin-top: 11em;
+    margin-top: 24em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -284,7 +251,7 @@ a {
 }
 
 .hero img {
-    margin-top: 11em;
+    margin-top: 24em;
     margin-left: .25rem;
     height: 22rem;
     width: 22rem;
@@ -294,14 +261,14 @@ a {
 }
 
 .hero img:hover {
-    margin-top: 11em;
+    margin-top: 24em;
     width: 30rem;
     height: 30rem;
 
 }
 
 .bio {
-    margin-top: 11rem;
+    margin-top: 24rem;
     width: 25rem;
     padding: 1rem;
     border-radius: 6px;
@@ -313,7 +280,7 @@ a {
 /* media query for hero setion*/
 @media screen and (min-device-width: 220px) and (max-device-width: 320px) {
     .hero {
-        margin-top: 11em;
+        margin-top: 24em;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -323,8 +290,8 @@ a {
     }
 
     .hero img {
-        margin-top: 11rem;
-        margin-left: .25rem;
+        margin-top: 24rem;
+       
         width: 8em;
         height: 8rem;
         border-radius: 50%;
@@ -340,9 +307,10 @@ a {
     }
 
     .bio {
-        margin-top: 11rem;
+        margin-top: 24rem;
         width: 10rem;
         padding: .5rem;
+        margin-left: 2rem;
         border-radius: 6px;
         box-shadow: 0px 2px 15px 2px var(--primary-shadow);
         font-size: .7rem;
@@ -353,7 +321,7 @@ a {
 /* media query for hero setion @ 321-600px */
 @media screen and (min-device-width: 321px) and (max-device-width: 600px) {
     .hero {
-        margin-top: 11em;
+        margin-top: 24em;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -363,8 +331,8 @@ a {
     }
 
     .hero img {
-        margin-top: 11rem;
-        margin-left: 5.25rem;       
+        margin-top: 24rem;
+        margin-left: 1rem;       
         width: 12em;
         height: 12rem;
         border-radius: 50%;
@@ -373,16 +341,17 @@ a {
     }
 
     .hero img:hover {
-        margin-top: 11rem;
+        margin-top: 24rem;
         width: 15rem;
         height: 15rem;
 
     }
 
     .bio {
-        margin-top: 11rem;
+        margin-top: 24rem;
         width: 20rem;
-        padding: 1rem;
+        margin-left:0;
+        padding: .5rem;
         border-radius: 6px;
         box-shadow: 0px 2px 15px 2px var(--primary-shadow);
         font-size: .75rem;
@@ -393,7 +362,7 @@ a {
 /* media query for hero setion @  601 px - 1024 */
 @media screen and (min-device-width: 601px) and (max-device-width: 1024px) {
     .hero {
-        margin-top: 11em;
+        margin-top: 24em;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -403,7 +372,7 @@ a {
     }
 
     .hero img {
-        margin-top: 11rem;
+        margin-top: 24rem;
         margin-left: .25rem;
         width: 17em;
         height: 17rem;
@@ -420,7 +389,7 @@ a {
     }
 
     .bio {
-        margin-top: 11rem;
+        margin-top: 24rem;
         width: 22rem;
         padding: 1.5rem;
         border-radius: 6px;
@@ -570,7 +539,7 @@ h2 {
     grid-template-rows: 7rem;
     grid-gap: 4rem;
     width: 100%;
-    margin-left: 2em;   
+    margin-left: 9em;   
     padding: 2.5em;
 }
 
@@ -608,7 +577,7 @@ h2 {
             align-items: center;
             width: 100%;
             /* Set full-width to expand the whole page */
-            margin-left: 1.5em;
+            margin-left: .25em;
           
             padding: 1em;
         }
@@ -647,12 +616,9 @@ h2 {
         grid-template-rows: 8rem ;
         grid-gap: .5em;
         justify-content: left;
-        /* place equal distance on sides of screen + margin-left */
-        /* Make the container element behave like a table */
         align-items: center;
-        width: 100%;
-        /* Set full-width to expand the whole page */
-        margin-left: 4%;
+        width: 100%;      
+        margin-left: .25em;
        
         padding: 0;
     }
@@ -694,7 +660,7 @@ h2 {
 @media screen and (min-device-width: 421px) and (max-device-width: 600px) {
     .col-container {
         display: grid;
-        grid-template-columns: repeat(4, 6rem);
+        grid-template-columns: repeat(4, 5rem);
         grid-template-rows: 8rem ;
         grid-gap: .5em;
         justify-content: left;
@@ -703,7 +669,7 @@ h2 {
         align-items: center;
         width: 100%;
         /* Set full-width to expand the whole page */
-        margin-left: 10%;
+        margin-left: .25em;
        
         padding: 0;
     }
@@ -746,7 +712,7 @@ h2 {
         align-items: center;
         width: 100%;
         /* Set full-width to expand the whole page */
-        margin-left: 10%;
+        margin-left: 0.25em;
        
         padding: 0;
     }
@@ -789,10 +755,10 @@ h2 {
         align-items: center;
         width: 100%;
         /* Set full-width to expand the whole page */
-        margin-left: 10%;
-       
+        margin-left: 10em;
+       margin-top: 20em;
         padding: 0;
-        margin-bottom: 22em;
+        margin-bottom: 42em;
     }
 
     /* Make elements inside the container behave like table cells */
@@ -832,6 +798,16 @@ h2 {
 }
 
 h1 {
+    position: absolute;
+        left: 460px;
+        top: 119em;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.projects-header {
+    margin-top: 38em;
     font-size: 24px;
     font-weight: 400;
     text-align: center;
@@ -866,6 +842,7 @@ img {
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
+    margin-top: 30em;
     padding: 0;
 }
 
@@ -916,12 +893,6 @@ img {
     margin-bottom: 1.25rem;
     font-weight: 400;
 }
-
-
-
-
-           
-
 
 .contact {
     margin: 100px;
@@ -1104,5 +1075,8 @@ footer {
 
     .dl-resume li {
         text-decoration: none;
+    }
+    .copy{
+        color: black;
     }
 }
