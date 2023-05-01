@@ -19,52 +19,49 @@
 </head>
 
 <body>
+    <header>
+        <div class="container">
+            <nav class="navbar"> <a href="#" class="nav-branding">Gerald Bartlett</a>
+                <ul class="nav-menu">
+                <li> <a href="#hero" class="nav-link">Home</a></li>
+                <li> <a href="#more-about" class="nav-link">About </a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact </a></li>
+                <li><a href="creds.html" class="nav-link" target="_blank">Credentials</a></li>
+                <li><a href="resume/Resume.pdf" class="nav-link">Resume</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
 
-    <!-- Navagation area -->
-    <nav>
-        <h1 class="header">Gerald Bartlett</h1>       
-        <ul class="navbar">
-            
-            <li> <a href="#about" class="nav-link">Home</a></li>
-            <li> <a href="#more-about" class="nav-link">About </a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>            
-            <li><a href="#contact" class="nav-link">Contact </a></li>
-            <li><a href="creds.html" class="nav-link" target="_blank">Credentials</a></li>
-            <li><a href="resume/Resume.pdf" class="nav-link">Resume</a></li>
-
-        </ul>
-        <!-- <button class="burger-menu" id="burger-menu">
-            <ion-icon class="bars" name="menu-outline"></ion-icon>
-
-        </button> -->
-
-       
-    </nav>
-
+</header>
     <!-- Hero Section -->
     <video autoplay muted loop id="myVideo">
         <source src="videos/night_sky_stars_universe_motion_1108.mp4" type="video/mp4">
     </video>
 
-    <section class="hero" id="about">
-        </div>
+    <section class="hero" id="hero">
+        </div class="hero" id="hero">
         <img src="images/me.png" alt="gerald bartlett" loading="lazy" class="hero-img" />
-        <div class="bio animate__animated animate__shakeX">
-
-            <h2 class="bio-title"></h2>
-            <p class="bio-text">
-
+        <div class="bio animate__animated animate__shakeX">          
+            <p class="bio-text"><strong>
                 Hello, My name is Gerald Bartlett <br> I am a Software Developer in NewFoundland, Canada. <br>
                 Please Take a stroll through my Portfolio and get a glimpse of what I have done and get to know me.
             </p>
+            </strong>
         </div>
     </section>
-    <!-- More about me-->
+  
+  
 
     <section class="more-about" id="more-about">
 
-        <p class="about-me">My Journey<br><br>
+        <p class="about-me">
             I started this journey coming from 12 years in the Electrical field. I was needing a career change,
             computers being a passion for me for many
             years, I applied to Keyin College St.John's NL, for their Software Development program but needed academic
@@ -88,7 +85,7 @@
             <br>- Dev-Ops & Software Design
             <br>- Software micro-cred-SoftwareFoundataions
             <br>- My Finances 101 from Enriched Academy
-            <br>
+           
             In my final semester I studied Java, Software Design and Testing, Dev Ops,
             and AWS Cloud Architecture, of which I enjoyed very much. Now while waiting for a position I
             am taking Java as well as JavaScript courses online that should increase my
@@ -101,7 +98,7 @@
             Postman & Docker. I am passionate and focused when I take on any task. I am eager to
             learn, work well within a team and love eureka moments when coding !!
 
-            <br>
+           
             <br> Prior to studying Software Development, I have experience in sales, marketing & customer service
             which allow me to be able to work one on one with customers <br> & suppliers. I listened carefully & ask
             appropriate
@@ -109,266 +106,175 @@
         </p>
 
     </section>
-    <!-- Skills section 
-     icons and images set it to lazy. This will 
-     make sure that the images are loaded only when the user scrolls to the sections containing them-->
-<section>
-
-<div class="skills" id="skills">
-    <a class="skills-wrapper">
-        <a class="first-set animate__animated animate__pulse">
-            <p class="skill-header">My Skills</p>
-            <div class="row">
-                <div class="column">
-                    <div class="card">
-                        <figure><img src="images/python.png" alt="python" loading="lazy" width="200" height="200"
-                                class="icon icon-card" />
-                            <figcaption>Python</figcaption>
-        </a></figure>
-</div>
-</div>
-<div class="row">
-    <div class="column">
-        <div class="card">
-            <figure><img src="images/HTML.png" alt="html" loading="lazy" width="200" height="200" class="icon icon-card" />
-                <figcaption>HTML</figcaption>
-                </a>
-            </figure>
+   
+   
+<section id ="skills" >
+<h2 class="skills-header">Skills</h2>
+<div class="col-container" id="skills" >
+    <div class="col" >
+        <img src="images/python.png" alt="python" loading="lazy" class="card-img">
+        <h3 class="card-text">Python</h3>
         </div>
+    <div class="col">
+        <img src="images/HTML.png" alt="html" loading="lazy" class="card-img" />
+        <h3 class="card-text" >HTML</h3>          
     </div>
-    <div class="row">
-        <div class="column">
-            <div class="card">
-                <figure></figure><img src="images/css 3.png" alt="css" loading="lazy" class="icon icon-card" width="200" height="200" />
-                <figcaption>CSS</figcaption>
-                </a></figure>
-            </div>
+    <div class="col">
+        <img src="images/css 3.png" alt="css" loading="lazy" class="card-img">
+        <h3 class="card-text" >Css</h3>
         </div>
-        <div class="row">
-            <div class="column">
-                <div class="card">
-                    <figure></figure><img src="images/icons8-javascript-48.png" alt="js" loading="lazy" width="200" height="200"
-                        class="icon icon-card" />
-                    <figcaption>JavaScript</figcaption>
-                    </a></figure>
+    <div class="col">
+        <img src="images/icons8-javascript-48.png" alt="js" loading="lazy" class="card-img">
+        <h3 class="card-text" >JavaScript</h3>
+            </div>
+        <div class="col">
+        <img src="images/javascript-240.png" alt="js" loading="lazy" class="card-img">
+        <h3 class="card-text" >Node Js</h3>
+    </div>
+    <div class="col">
+        <img src="images/java-256.png" alt="java" loading="lazy" class="card-img">
+        <h3 class="card-text" >Java</h3>
+    </div>
+    <div class="col">
+        <img src="images/aws.webp" alt="aws" loading="lazy" class="card-img">
+        <h3 class="card-text" >AWS</h3>
+        </div>
+    <div class="col">
+    <img src="images/postgresql.png" alt="PostgreSQL" loading="lazy" class="card-img">
+        <h3 class="card-text" >PostgreSQL</h3>
+        </div>
+    <div class="col">
+    <img src="images/mongo db.png" alt="mongodb" loading="lazy" class="card-img">
+        <h3 class="card-text" >Mongodb</h3>
+        </div>
+    <div class="col">
+        <img src="images/mysql.png" alt="mysql" loading="lazy" class="card-img">
+        <h3 class="card-text" >MySQL</h3>
+        </div>
+    <div class="col">
+        <img src="images/web-api-icon.png" alt="web-api" loading="lazy" class="card-img">
+        <h3 class="card-text" >Rest-API</h3>
+        </div>
+    <div class="col">
+        <img src="images/spring.png" alt="spring" loading="lazy" class="card-img">
+        <h3 class="card-text" >SpringBoot</h3>
+        </div>
+    <div class="col">
+        <img src="images/react.png" alt="react" loading="lazy" class="card-img">
+        <h3 class="card-text" >React</h3>
+        </div>
+    <div class="col">
+    <img src="images/Docker-Logo-2013.png" alt="Docker" loading="lazy" class="card-img">
+        <h3 class="card-text" >Docker</h3>
+        </div>
+    <div class="col">
+        <img src="images/postman.png" alt="postman" loading="lazy" class="card-img">
+        <h3 class="card-text" >Postman</h3>
+        </div>
+    <div class="col">
+        <img src="images/vscode.jpg" alt="postman" loading="lazy" class="card-img">
+        <h3 class="card-text" >VS Code</h3>
+        </div>  
+</div>
+
+<div class="main" id="projects">
+    <h1>Projects</h1>
+    <ul class="cards">
+        <li class="cards_item">
+            <div class="card">
+                <div class="card_image"><img src="images/Family ToDo.jpg"></div>
+                <div class="card_content">
+                    <h2 class="card_title">JavaScript Project</h2>
+                    <p class="card_text">I called this the Family ToDo List. The User Add a number of new tasks,
+                     who did that task & the time the task was completed.
+                    Also with the ability to remove the task(s) from the list.
+                    Using HTML, CSS & JavaScript.</p>
+                    <button class="btn card_btn"><a href="https://gerald-bartlett.github.io/FamilyToDoList/" target="_blank">Check It Out</a></button>
                 </div>
             </div>
-            <div class="row">
-                <div class="column">
-                    <div class="card">
-                        <figure></figure><img src="images/javascript-240.png" alt="js" loading="lazy" width="200" height="200"
-                            class="icon icon-card" />
-                        <figcaption>Node JS</figcaption>
-                        </a></figure>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="column">
-                        <div class="card">
-                            <figure></figure><img src="images/java-256.png" alt="java" loading="lazy" width="200" height="200"
-                                class="icon icon-card" />
-                            <figcaption>Java</figcaption>
-                            </a></figure>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="column">
-                            <div class="card">
-                                <figure></figure><img src="images/aws.webp" alt="java" loading="lazy" width="200" height="200"
-                                    class="icon icon-card" />
-                                <figcaption>AWS</figcaption>
-                                </a></figure>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="column">
-                                <div class="card">
-                                    <figure></figure><img src="images/postgresql.png" alt="PostgreSQL" width="200" height="200"
-                                        loading="lazy" class="icon icon-card" />
-                                    <figcaption>PostgreSQL</figcaption>
-                                    </a></figure>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="column">
-                                    <div class="card">
-                                        <figure></figure><img src="images/mongo db.png" alt="mongodb" width="200" height="200"
-                                            loading="lazy" class="icon icon-card" />
-                                        <figcaption>mongodb</figcaption>
-                                        </a></figure>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="column">
-                                        <div class="card">
-                                            <figure></figure><img src="images/mysql.png" alt="mysql" width="200" height="200"
-                                                loading="lazy" class="icon icon-card" />
-                                            <figcaption>MySql</figcaption>
-                                            </a></figure>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="column">
-                                            <div class="card">
-                                                <figure></figure><img src="images/web-api-icon.png"
-                                                    alt="web-api" loading="lazy" width="200" height="200" class="icon icon-card" /> 
-                                                <figcaption>RestAPI</figcaption>
-                                                </a></figure>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="column">
-                                                <div class="card">
-                                                    <figure></figure><img src="images/spring.png" alt="web-api"
-                                                        loading="lazy" width="200" height="200" class="icon icon-card" />
-                                                    <figcaption>Spring Boot</figcaption>
-                                                    </a></figure>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="column">
-                                                    <div class="card">
-                                                        <figure></figure><img src="images/react.png" alt="react"
-                                                            loading="lazy" width="200" height="200" class="icon icon-card" />
-                                                        <figcaption>React</figcaption>
-                                                        </a></figure>
-                                                        </figure>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="column">
-                                                        <div class="card">
-                                                            <figure><img src="images/Docker-Logo-2013.png"
-                                                                    alt="Docker" loading="lazy" width="200" height="200"
-                                                                    class="icon icon-card" />
-                                                                <figcaption>Docker</figcaption>
-                                                                </a>
-                                                            </figure>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="column">
-                                                            <div class="card">
-                                                                <figure><img src="images/postman.png"
-                                                                        alt="postman" loading="lazy" width="200" height="200"
-                                                                        class="icon icon-card" />
-                                                                    <figcaption>Postman</figcaption>
-                                                                    </a>
-                                                                </figure>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-</section>
-        <!-- Projects section-->
-        <section class="projects" id="projects">
-            <h2 class="projects-title"></h2>
-
-            <div class="project-container project-card">
-                <img src="images/Family ToDo.jpg" alt="family_todo"
-                    loading="lazy" class="project-pic" />
-                <h3 class="project-title">ToDo List</h3>
-                <p class="project-details">
-                    I called it Family ToDo List. Add a number of new tasks
-                    & who did that task, the time the task was completed,
-                    with the ability to remove the task(s) from the list.
-                    Using HTML, CSS & JavaScript.
-                </p>
-                <a href="https://gerald-bartlett.github.io/FamilyToDoList/"
-                    target="_blank" width="275" height="275">Check it
-                    out</a>
-            </div>
-
-
-            <div class="project-container project-card">
-                <video width="275" height="275" controls>
-                    <source src="videos/Family Freezer Friend.mp4"
-                        type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <h3 class="project-title">Family Freezer Friend Project</h3>
-                <p class="project-details">
-                    This was a team project (Created by Gerald Bartlett,
+        </li>
+        <li class="cards_item">
+            <div class="card">
+                <div class="card_image"><img src="/images/freezer-friend.jpg"></div>
+                <div class="card_content">
+                    <h2 class="card_title">React Project</h2>
+                    <p class="card_text">This was a team project (Created by Gerald Bartlett,
                     David Temple and Barry Poole).
                     We called it the "Family Freezer Friend".
                     It was an app that would keep track of food products
                     within a refrigerator. Someone could add or remove
                     products as they are
-                    needed.
-                </p>
-                <a href="videos/Family Freezer Friend.mp4"
-                    target="_blank" class="project-link" width="275"
-                    height="275">Check it Out</a>
+                    needed.</p>
+                    <button class="btn card_btn"><a href="videos/Family Freezer Friend.mp4" target="_blank" class="project-link" width="275" height="275">Check It
+                Out</a></button>
+                </div>
             </div>
-
-            <div class="project-container project-card">
-                <img src="images/Census.jpg" loading="lazy"
-                    class="project-pic" width="275" height="275" />
-                <h3 class="project-title">Node JS Project</h3>
-                <p class="project-details">
-                    This program uses 2 databases, PostgreSQL & Mongo DB via
-                    a UI searching either by province, household id, family
-                    name & census year
-                <p>It also produces a log event that stores the chosen
-                    search & email address of the user that logged in into a
-                    text
-                    file within the src folder
-                </p>
-                <a href="videos/Sprint2_Team2_Census - Google Chrome 2022-11-23 20-31-55.mp4"
-                    target="_blank" class="project-link" width="225"
-                    height="225">Check it Out</a> <br>
-                <a class="node-video" href="videos/eventLog.txt - Census-BDG - Visual Studio Code 2022-11-23 20-33-20.mp4"
-                    target="_blank" class="project-link" width="225" 
-                    height="225">Check it Out</a>
-
-
-
-
-                <img src="images/Census-eventlogs.jpg"
-                    loading="lazy" class="project-pic" width="275"
-                    height="275" />
-
-                </video>
+        </li>
+        <li class="cards_item">
+            <div class="card">
+                <div class="card_image"><img src="images/Census.jpg"></div>
+                <div class="card_content">
+                    <h2 class="card_title">Node JS Project</h2>
+                    <p class="card_text">This program uses 2 databases, PostgreSQL & Mongo DB via a UI searching either by province, household id, family
+                    name & census year <br> Below in the next image card you will see this project also produced a log event that stores the chosen search & email address of the user that logged in into a text
+                    file within the src folder</p>
+                    <button class="btn card_btn">Check It Out</button>
+                </div>
             </div>
-
-            <div class="project-container project-card">
-                <img src="images/react-spring-boot.jpg"
-                    alt="friendly fridge" loading="lazy" class="project-pic"
-                    width="275" height="275" />
-                <h3 class="project-title"> SpringBoot Project</h3>
-                <p class="project-details">
-                    This is a class team project that used react for the
+        </li>
+        <li class="cards_item">
+            <div class="card">
+                <div class="card_image"><img src="images/Census-eventlogs.jpg"></div>
+                <div class="card_content">
+                    <h2 class="card_title">Node Js Project</h2>
+                    <p class="card_text">This program is the sceond half of the Census Project above which uses 2 databases, PostgreSQL & Mongo DB via a UI searching either by province, household id, family
+                    name & census year <br>This link shows the log event it produced, that stored the chosen search & email address of the user that logged in into a text
+                    file within the src folder</p>
+                    <button class="btn card_btn"><a class="node-video" href="videos/eventLog.txt - Census-BDG - Visual Studio Code 2022-11-23 20-33-20.mp4"
+                        target="_blank" class="project-link" width="225" height="225">Check it Out</a></button>
+                </div>
+            </div>
+        </li>
+        <li class="cards_item">
+            <div class="card">
+                <div class="card_image"><img src="images/react-spring-boot.jpg"></div>
+                <div class="card_content">
+                    <h2 class="card_title">SpringBoot, React, My MySQL Project</h2>
+                    <p class="card_text">This is a class team project that used react for the
                     Front End, SpringBoot, MySQL & PostMan (Team mates were
                     Gerald Bartlett, David Temple, &
-                    Barry Poole)</p>
-                <p>We had to create a database of Students & Users. Using a
+                    Barry Poole) <br>We had to create a database of Students & Users. Using a
                     React UI we had to search for specific user / student
                     within our
-                    MySQLdatabase </p>
-                </p>
-                <a href="videos/React App - Google Chrome 2022-11-23 19-50-38.mp4"
-                    target="_blank" class="project-link" width="275"
-                    height="275">Check it Out</a>
+                    MySQLdatabase</p>
+                    <button class="btn card_btn"><a href="videos/React App - Google Chrome 2022-11-23 19-50-38.mp4" target="_blank" class="project-link" width="275"
+                        height="275">Check it Out</a></button>
+                </div>
             </div>
-            <div class="project-container project-card">
-                <img src="images/image-flipper.jpg" alt="image-flipper"
-                    loading="lazy" class="project-pic" />
-                <h3 class="project-title">Image Flipper Project</h3>
-                <p class="project-details">
-                    This is a JavaScript project I just completed . It is a
+        </li>
+        <li class="cards_item">
+            <div class="card">
+                <div class="card_image"><img src="images/image-flipper.jpg"></div>
+                <div class="card_content">
+                    <h2 class="card_title">JavaScript Project</h2>
+                    <p class="card_text">This is a JavaScript project I just completed . It is a
                     collection of images from each of the Canadian
                     provinces. You
                     click on the nav bar buttons and it uses javaScript
                     functions to change(flip) the image to an image related
                     to that
                     particular province. It is fully responsive to screens
-                    sizes: 480px, 600px, 768px, 1024px & 1200px
-                </p>
-                <a href="https://gerald-bartlett.github.io/imageFlipperJs/"
-                    target="_blank">Check it out</a>
+                    sizes: 480px, 600px, 768px, 1024px & 1200px</p>
+                    <button class="btn card_btn"><a href="https://gerald-bartlett.github.io/imageFlipperJs/" target="_blank">Check it out</a></button>
+                </div>
             </div>
-    </div>
+        </li>
+
+      
+    </ul>
 </div>
+
+
 </section>
 
 <script src="script.js"></script>
@@ -381,7 +287,7 @@
 <section class="contact" id="contact">
     <h2 class="contact-me">Contact Me <br><a href="resume/Resume.pdf" target=_blank><b
                 class="view-resume">View My Resume</b> </a></h2>
-    <h2><a href="resume/Resume.pdf" download class="dl-resume">Download My Resume</a></li>
+    <h2><a href="resume/Resume.pdf" download class="dl-resume">Download Resume</a></li>
     </h2>
     <div class="contact-form-container">
         <div class="contact-form">

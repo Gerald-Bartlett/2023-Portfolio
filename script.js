@@ -1,17 +1,24 @@
 const ul = document.querySelector("nav ul");
-const nav = document.querySelector("navbar");
-const hamburger = document.querySelector("#burger-menu");
-  hamburger.addEventListener("click", () => {
-  ul.classList.toggle("show");
-});
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");;
+ hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+})
 
-const navLink = document.querySelectorAll(".nav-link");
+document.querySelectorAll(".nav-link").forEach(n =>
+    n.addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}))
 
-navLink.forEach((link) =>
-  link.addEventListener("click", () => {
-    ul.classList.remove("show");
-  })
-);
+// const navLink = document.querySelectorAll(".nav-link");
+
+// navLink.forEach((link) =>
+//   link.addEventListener("click", () => {
+//     ul.classList.remove("show");
+//   })
+// );
 
 // let d = new Date();
 // alert("Today's date is " + d);

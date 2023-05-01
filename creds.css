@@ -33,7 +33,7 @@ a:hover {
 
 nav {
     position: fixed;
-    top: 40px;
+    top: 0px;
     left: auto; 
     z-index: 1;
     display: flex;
@@ -50,7 +50,7 @@ nav {
 
 .header{
     font-size: 20px;
-    margin: 10px;
+    margin: 0;
 }
 .gtmr{
     font-size: 20px;
@@ -125,7 +125,7 @@ body {
 
 .btn {
     position: absolute;
-    bottom: -100px;
+    bottom: 0px;
     background: crimson;
     color: #fff;
     border: none;
