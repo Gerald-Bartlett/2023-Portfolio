@@ -26,11 +26,11 @@
 }
 
 /* CSS Resets */
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 
 
@@ -275,10 +275,10 @@ a {
     color: white;
 }
 
-/* media query for hero setion*/
+/* media query for hero section*/
 @media screen and (min-device-width: 220px) and (max-device-width: 320px) {
     .hero {
-        margin-top: 24em;
+        /* margin-top: 24em; */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -288,24 +288,23 @@ a {
     }
 
     .hero img {
-        margin-top: 24rem;
-       
-        width: 8em;
-        height: 8rem;
+        /* margin-top: 24rem;        */
+        width: 10em;
+        height: 10rem;
         border-radius: 50%;
         box-shadow: 0px 2px 15px 2px var(--primary-shadow);
         transition: width 1s, height 1s;
     }
 
     .hero img:hover {
-        margin-top: 11rem;
-        width: 11rem;
-        height: 11rem;
+        /* margin-top: 11rem; */
+        width: 25rem;
+        height: 25rem;
 
     }
 
     .bio {
-        margin-top: 24rem;
+        /* margin-top: 24rem; */
         width: 10rem;
         padding: .5rem;
         margin-left: 2rem;
@@ -314,9 +313,10 @@ a {
         font-size: .7rem;
         color: white;
     }
+      
 }
 
-/* media query for hero setion @ 321-600px */
+/* media query for hero section @ 321-600px */
 @media screen and (min-device-width: 321px) and (max-device-width: 600px) {
     .hero {
         margin-top: 24em;
@@ -518,9 +518,6 @@ h2 {
            
         }
 }
-
-
-
 
 /*  code for skills section */
 
