@@ -1,10 +1,10 @@
 
 /* Variables */
 :root {
-    --font-family: "Roboto", sans-serf;
-    --normal-font: 400;
-    --bold-font: 700;
-    --bolder-font: 900;
+    --font-family: "Open Sans", sans-serf;
+    --normal-font: 700;
+    --bold-font: 900;
+    --bolder-font: 1200;
     --bg-color: #fcfcfc;
     --primary-color: #4756df;
     --secondary-color: #ff7235;
@@ -15,6 +15,7 @@
     --line-height: 1.7rem;
     --transition: 0.3s;
 }
+
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
     position: fixed;
@@ -66,14 +67,15 @@ a {
 }
 
 .nav-branding {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 60px;
+    gap: 3.75rem;
+    font-size: 2rem;
 }
 
 .nav-link {
@@ -100,10 +102,8 @@ a {
 }
 
 
-/* @media screen and (min-device-width: 600px) and (max-device-width: 944px) {
- 
-} */
-@media screen and (min-device-width: 200px) and (max-device-width: 320px) {
+
+@media screen and (max-width: 320px) {
     .hamburger {
         display: block;
     }
@@ -139,12 +139,89 @@ a {
     .nav-menu.active {
         left: 0;
     }
+
+    .hero {
+        /* margin-top: 24em; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        max-width: 50rem;
+        margin-bottom: 24em;
+    }
+
+    .hero img {
+        /* margin-top: 24rem;        */
+        width: 10em;
+        height: 10rem;
+        border-radius: 50%;
+        box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+        transition: width 1s, height 1s;
+    }
+
+    .hero img:hover {
+        /* margin-top: 11rem; */
+        width: 25rem;
+        height: 25rem;
+
+    }
+
+    .bio {
+        /* margin-top: 24rem; */
+        width: 10rem;
+        padding: .5rem;
+        margin-left: 2rem;
+        border-radius: 6px;
+        box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+        font-size: .7rem;
+        color: white;
+    }
+
+    .col-container {
+        display: grid;
+        grid-template-columns: repeat(2, 6rem);
+        grid-template-rows: 8rem;
+        grid-gap: 1rem;
+        justify-content: left;
+        /* place equal distance on sides of screen + margin-left */
+        /* Make the container element behave like a table */
+        align-items: center;
+        width: 100%;
+        /* Set full-width to expand the whole page */
+        margin-left: .25em;
+
+        padding: 1em;
+    }
+
+    /* Make elements inside the container behave like table cells */
+    .col {
+        display: table-cell;
+
+
+    }
+
+    .card-img {
+        width: 50%;
+    }
+
+    .card-text {
+        font-size: 10px;
+        padding: 1em;
+        text-align: center;
+        max-width: 320px;
+        color: white;
+    }
+
+    .card-text:hover {
+        color: crimson;
+
+    }
 }
 
 /* end of new nav bar */
 
 
-@media screen and (min-device-width: 321px) and (max-device-width: 600px) {
+@media screen and (max-device-width: 600px) {
     .hamburger {
         display: block;
     }
@@ -200,9 +277,111 @@ a {
         transition: all 0.2s ease;
         background-color: white;
     }
+
+    .hero {
+        margin-top: 24em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+        max-width: 60rem;
+        margin-bottom: 17em;
+    }
+
+    .hero img {
+        margin-top: 24rem;
+        margin-left: 1rem;
+        width: 12em;
+        height: 12rem;
+        border-radius: 50%;
+        box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+        transition: width 1s, height 1s;
+    }
+
+    .hero img:hover {
+        margin-top: 24rem;
+        width: 15rem;
+        height: 15rem;
+
+    }
+
+    .bio {
+        margin-top: 24rem;
+        width: 20rem;
+        margin-left: 0;
+        padding: .5rem;
+        border-radius: 6px;
+        box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+        font-size: .75rem;
+        color: white;
+    }
+
+    .about-me {
+        font-size: 12px;
+        column-count: 1;
+
+        /* place equal distance on sides of screen + margin-left */
+        /* Make the container element behave like a table */
+    }
+
+    .more-about {
+        margin-bottom: 10rem;
+        background-color: none;
+        padding: .5rem .25rem;
+        color: white;
+    }
+
+    .more-about p {
+        margin-top: 14rem;
+
+        line-height: 1.20rem;
+        margin-left: 4em;
+
+
+    }
+
+  .col-container {
+      display: grid;
+      grid-template-columns: repeat(4, 5rem);
+      grid-template-rows: 8rem;
+      grid-gap: .5em;
+      justify-content: left;
+      /* place equal distance on sides of screen + margin-left */
+      /* Make the container element behave like a table */
+      align-items: center;
+      width: 100%;
+      /* Set full-width to expand the whole page */
+      margin-left: .25em;
+
+      padding: 0;
+  }
+
+  /* Make elements inside the container behave like table cells */
+  .col {
+      display: table-cell;
+
+
+  }
+
+  .card-img {
+      width: 4.5em;
+  }
+
+  .card-text {
+      font-size: 11px;
+      /* padding: .25em; */
+      text-align: center;
+      max-width: 600px;
+      color: white;
+  }
+
+  .card-text:hover {
+      color: crimson;
+
+  }
 }
 
-@media screen and (min-device-width: 601px) and (max-device-width: 1024px) {
+@media screen  and (max-device-width: 1024px) {
     .container {
         max-width: 1024px;
         width: 90%;
@@ -236,129 +415,7 @@ a {
     .nav-link:hover {
         color: crimson;
     }
-}
 
-.hero {
-    margin-top: 20em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-    max-width: 90rem;  
-    margin-left: 10.25rem;
-}
-
-.hero img {
-    margin-top: 20em;
-    margin-left: .25rem;
-    height: 22rem;
-    width: 22rem;
-    border-radius: 50%;
-    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
-    transition: width 1s, height 1s;
-}
-
-.hero img:hover {
-    margin-top: 20em;
-    width: 30rem;
-    height: 30rem;
-
-}
-
-.bio {
-    margin-top: 20rem;
-    width: 25rem;
-    padding: 1rem;
-    border-radius: 6px;
-    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
-    font-size: 1.25rem;
-    color: white;
-}
-
-/* media query for hero section*/
-@media screen and (min-device-width: 220px) and (max-device-width: 320px) {
-    .hero {
-        /* margin-top: 24em; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        max-width: 50rem;
-        margin-bottom: 24em;
-    }
-
-    .hero img {
-        /* margin-top: 24rem;        */
-        width: 10em;
-        height: 10rem;
-        border-radius: 50%;
-        box-shadow: 0px 2px 15px 2px var(--primary-shadow);
-        transition: width 1s, height 1s;
-    }
-
-    .hero img:hover {
-        /* margin-top: 11rem; */
-        width: 25rem;
-        height: 25rem;
-
-    }
-
-    .bio {
-        /* margin-top: 24rem; */
-        width: 10rem;
-        padding: .5rem;
-        margin-left: 2rem;
-        border-radius: 6px;
-        box-shadow: 0px 2px 15px 2px var(--primary-shadow);
-        font-size: .7rem;
-        color: white;
-    }
-      
-}
-
-/* media query for hero section @ 321-600px */
-@media screen and (min-device-width: 321px) and (max-device-width: 600px) {
-    .hero {
-        margin-top: 24em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 2.5rem;
-        max-width: 60rem;
-        margin-bottom: 17em;
-    }
-
-    .hero img {
-        margin-top: 24rem;
-        margin-left: 1rem;       
-        width: 12em;
-        height: 12rem;
-        border-radius: 50%;
-        box-shadow: 0px 2px 15px 2px var(--primary-shadow);
-        transition: width 1s, height 1s;
-    }
-
-    .hero img:hover {
-        margin-top: 24rem;
-        width: 15rem;
-        height: 15rem;
-
-    }
-
-    .bio {
-        margin-top: 24rem;
-        width: 20rem;
-        margin-left:0;
-        padding: .5rem;
-        border-radius: 6px;
-        box-shadow: 0px 2px 15px 2px var(--primary-shadow);
-        font-size: .75rem;
-        color: white;
-    }
-}
-
-/* media query for hero setion @  601 px - 1024 */
-@media screen and (min-device-width: 601px) and (max-device-width: 1024px) {
     .hero {
         margin-top: 24em;
         display: flex;
@@ -397,7 +454,42 @@ a {
     }
 }
 
+.hero {
+    margin-top: 8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 90rem;
+    margin-left: 10.25rem;
+}
 
+.hero img {
+    margin-top: 8em;
+    margin-left: .25rem;
+    height: 32rem;
+    width: 32rem;
+    border-radius: 50%;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+    transition: width 1s, height 1s;
+}
+
+.hero img:hover {
+    margin-top: 8em;
+    width: 40rem;
+    height: 40rem;
+
+}
+
+.bio {
+    margin-top: 8rem;
+    width: 25rem;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+    font-size: 1.25rem;
+    color: white;
+}
 .bio p,.nav-branding,
 
 .bio p,
@@ -478,267 +570,58 @@ h2 {
 
 .more-about {
     margin-top: 11rem;
-    background-color: none;
-    padding:1rem 2rem;
+    background-color: black;
+    padding: 1rem 2rem;
     color: white;
+    border-radius: 10%;
 }
 
 .more-about p {
     margin-top: 10.5rem;
-    margin-bottom: 10rem;
-    line-height: 1.70rem;
+    /* margin-bottom: 20rem; */
+    line-height: 2.0rem;
     padding: 0.4rem;
-    font-size: 17px;
+    font-size: 1.75rem;
 }
 
-
-@media(max-width:600px) {
-    
-    .about-me {
-            font-size: 12px;
-            column-count: 1;
-           
-                /* place equal distance on sides of screen + margin-left */
-                /* Make the container element behave like a table */
-        }
-    
-        .more-about {
-            margin-bottom: 10rem;
-            background-color: none;
-            padding: .5rem .25rem;
-            color: white;
-        }
-
-        .more-about p {
-            margin-top: 14rem;
-           
-            line-height: 1.20rem;
-            margin-left: 4em;
-           
-           
-        }
-}
-
-/*  code for skills section */
-
-.skills-header {
-    font-size: 1.5em;
-    text-align: center;
-    margin-top: 10em;
-}
 .col-container {
-    margin-top: 8em;
+    margin-top: 18em;
     display: table;
     display: grid;
-    grid-template-columns: repeat(4, 8rem);
+    grid-template-columns: repeat(8, 8rem);
     grid-template-rows: 7rem;
-    grid-gap: 4rem;
+    grid-gap: 5rem;
     width: 100%;
-    margin-left: 9em;   
-    padding: 2.5em;
+    /* margin-left: 29em; */
+    padding: 3.5em;
 }
 
 .col {
     display: table-cell;
+
 }
 
-.card-img{
-    margin-left: 2em;
-    width: 100px;
-     margin-top: 0;
+.card-img {
+    margin-left: 10em;
+    width: 20rem;
+    margin-top: 18em;
+    border-radius: 10%;
 }
+
 .card-text {
-    font-size: 14px;   
+    font-size: .85rem;
     max-width: 1024px;
     color: white;
-    margin-left: 2.7em;
+    margin-left: 15em;
 }
 
 .card-text:hover {
     color: crimson;
-    
-}
-
-
-/* If the browser window is smaller than 320px, make the columns stack on top of each other */
-@media screen and (min-device-width: 220px) and (max-device-width: 320px) {
-    .col-container {
-            display: grid;
-            grid-template-columns: repeat(2, 6rem);
-            grid-template-rows: 8rem;
-            grid-gap: 1rem;
-            justify-content: left; /* place equal distance on sides of screen + margin-left */
-            /* Make the container element behave like a table */
-            align-items: center;
-            width: 100%;
-            /* Set full-width to expand the whole page */
-            margin-left: .25em;
-          
-            padding: 1em;
-        }
-        
-        /* Make elements inside the container behave like table cells */
-        .col {
-            display: table-cell;
-           
-           
-        }
-    
-        .card-img {
-            width: 50%;           
-        }
-    
-        .card-text {
-            font-size: 10px;
-            padding:  1em;
-            text-align: center;
-            max-width: 320px;
-            color: white;
-        }
-    
-        .card-text:hover {
-            color: crimson;
-    
-        }  
 
 }
 
-/* If the browser window is smaller than 420px, make the columns stack on top of each other */
-@media screen and (min-device-width: 321px) and (max-device-width: 420px) {
-    .col-container {
-        display: grid;
-        grid-template-columns: repeat(3, 5rem);
-        grid-template-rows: 8rem ;
-        grid-gap: .5em;
-        justify-content: left;
-        align-items: center;
-        width: 100%;      
-        margin-left: .25em;
-       
-        padding: 0;
-    }
 
-    /* Make elements inside the container behave like table cells */
-    .col {
-        display: table-cell;
-
-
-    }
-
-    .card-img {
-        width: 4.5em;
-    }
-
-    .card-text {
-        font-size: 11px;
-        padding: .25em;
-        text-align: center;
-        max-width: 600px;
-        color: white;
-    }
-
-    .card-text:hover {
-        color: crimson;
-
-    }
-
-    .skills {
-        max-width: 37.5rem;
-   
-        padding: auto;
-        text-align: center;
-    }
-
-}
-
-/* If the browser window is smaller than 420px, make the columns stack on top of each other */
-@media screen and (min-device-width: 421px) and (max-device-width: 600px) {
-    .col-container {
-        display: grid;
-        grid-template-columns: repeat(4, 5rem);
-        grid-template-rows: 8rem ;
-        grid-gap: .5em;
-        justify-content: left;
-        /* place equal distance on sides of screen + margin-left */
-        /* Make the container element behave like a table */
-        align-items: center;
-        width: 100%;
-        /* Set full-width to expand the whole page */
-        margin-left: .25em;
-       
-        padding: 0;
-    }
-
-    /* Make elements inside the container behave like table cells */
-    .col {
-        display: table-cell;
-
-
-    }
-
-    .card-img {
-        width: 4.5em;
-    }
-
-    .card-text {
-        font-size: 11px;
-        /* padding: .25em; */
-        text-align: center;
-        max-width: 600px;
-        color: white;
-    }
-
-    .card-text:hover {
-        color: crimson;
-
-    }
-
-
-}
-@media screen and (min-device-width: 601px) and (max-device-width: 800px) {
-    .col-container {
-        display: grid;
-        grid-template-columns: repeat(5, 5.5rem);
-        grid-template-rows: 8rem ;
-        grid-gap: .5em;
-        justify-content: left;
-        /* place equal distance on sides of screen + margin-left */
-        /* Make the container element behave like a table */
-        align-items: center;
-        width: 100%;
-        /* Set full-width to expand the whole page */
-        margin-left: 0.25em;
-       
-        padding: 0;
-    }
-
-    /* Make elements inside the container behave like table cells */
-    .col {
-        display: table-cell;
-
-
-    }
-
-    .card-img {
-        width: 5.5em;
-    }
-
-    .card-text {
-        font-size: 11px;
-        /* padding: .25em; */
-        text-align: center;
-        max-width: 800px;
-        color: white;
-    }
-
-    .card-text:hover {
-        color: crimson;
-
-    }
-
-
-}
-@media screen and (min-device-width: 801px) and (max-device-width: 1024px) {
+@media screen and (max-device-width: 1024px) {
     .col-container {
         display: grid;
         grid-template-columns: repeat(6, 6rem);
@@ -794,8 +677,8 @@ h2 {
 
 h1 {
     position: absolute;
-        left: 460px;
-        top: 119em;
+    left: 28.75rem;
+    top: 118.55rem;
     font-size: 24px;
     font-weight: 400;
     text-align: center;
@@ -824,7 +707,7 @@ img {
     display: block;
     width: 100%;
     cursor: pointer;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.07);
     background: transparent;
 }
 
@@ -832,18 +715,25 @@ img {
     background-color: rgba(255, 255, 255, 0.12);
 }
 
-.cards {
+.project-cards {
+
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
     margin-top: 30em;
     padding: 0;
+
 }
 
 .cards_item {
-    display: flex;
-    padding: 1rem;
+    /* display: flex; */
+    float: left;
+    width: 30%;
+
+    display: table;
+    clear: both;
+    padding: .5rem;
 }
 
 @media (min-width: 40rem) {
@@ -859,22 +749,25 @@ img {
 }
 
 .card {
+    height: 35em;
     background-color: white;
     border-radius: 0.25rem;
     box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+  flex-direction: column; */
     overflow: hidden;
+    margin-top: 10em;
+    border-radius: 5%;
 }
 
 .card_content {
-    padding: 1rem;
+    padding: .5rem;
     background: linear-gradient(to bottom left, grey 40%, #FFC39E 100%);
 }
 
 .card_title {
     color: #ffffff;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 800;
     letter-spacing: 1px;
     text-transform: capitalize;
@@ -883,12 +776,11 @@ img {
 
 .card_text {
     color: #ffffff;
-    font-size: 0.875rem;
+    font-size: 0.975rem;
     line-height: 1.5;
     margin-bottom: 1.25rem;
-    font-weight: 400;
+    font-weight: 700;
 }
-
 .contact {
     margin: 100px;
     text-align: center;
@@ -979,7 +871,108 @@ footer {
 .dl-resume li {
     text-decoration: none;
 }
-@media screen and (min-device-width: 220px) and (max-device-width: 600px) {
+
+
+@media screen and (max-width: 600px) {
+    .contact {
+            margin: 50px;
+            text-align: center;
+            margin-bottom: var(--bottom-margin-2);
+            font-size: 10px;
+        }
+    
+        .contact-form-container {
+    
+            max-width: 20.75rem;
+            margin: 0 auto;
+            padding: 0.938rem;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px var(--secondary-shadow);
+        }
+    
+        .contact-form-container label {
+            line-height: .7em;
+            font-weight: var(--bold-font);
+            color: white;
+        }
+    
+        .contact-form-container textarea {
+            min-height: 3.25rem;
+            font-size: 10px;
+        }
+    
+        .contact-form-container .input-field {
+            width: 100%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 5px;
+            border: none;
+            border: 2px outset var(--primary-color);
+            font-size: 10px;
+            outline: none;
+        }
+    
+        .input-field::placeholder {
+            padding: 0.25rem;
+            color: var(--primary-color);
+        }
+    
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #fff;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+            font-size: 10px;
+            font-weight: var(--bold-font);
+            transition: var(--transition);
+        }
+    
+        .submit-btn:hover {
+            background-color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            cursor: pointer;
+        }
+    
+        .socials {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            right: 1%;
+            bottom: 5%;
+        }
+    
+        .socicon {
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: white;
+        }
+    
+        footer {
+            background-color: var(--bg-color);
+            padding: .5rem;
+            text-align: center;
+            margin: .5rem 0 0;
+            font-size: 10px;
+        }
+    
+        .dl-resume {
+            font-size: 10px;
+            text-decoration: none;
+        }
+    
+        .dl-resume li {
+            text-decoration: none;
+        }
+    
+        .copy {
+            color: black;
+        }
+}
+
+
+/* @media screen and (min-device-width: 220px) and (max-device-width: 600px) {
 .contact {
         margin: 50px;
         text-align: center;
@@ -1074,4 +1067,4 @@ footer {
     .copy{
         color: black;
     }
-}
+} */
